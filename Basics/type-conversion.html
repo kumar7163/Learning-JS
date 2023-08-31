@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type conversion and coercion</title>
+</head>
+<body>
+
+    <script>
+        // First problem Convert a number to a string and concatenate it with another string.
+        const number1=30;
+        const string1 = "Anish";
+        const string2 = String(number1);
+        console.log(typeof string2); 
+        console.log("My name is "+ string1 +" and age is " + string2);
+        console.log(`My name is ${string1} and age is ${string2}`);
+        const number2 = 0;
+        const string3 = "10";
+        console.log(string3 + number2);
+
+        //Convert a string to a number and perform a mathematical operation.
+        const str1 = "5", str2 = "10";
+        // For subtraction, mul and div  its coercion (implicit conversion)
+        console.log(str2-str1);
+        console.log(str2*str1);
+        console.log(str2/str1);
+        console.log(str2%str1);
+        // For Addition the explicit conversion is required.
+        const num1 = Number(str1); // old method
+        const num2 = Number(str2);
+        console.log(num1+num2);
+        
+        console.log((+str1) + (+str2)); // New method
+
+        num3= parseInt(str1), num4= parseInt(str2); // another method
+        console.log(num3+num4);
+
+        //Convert a boolean to a string and check its length.
+        const booleanValue = false;
+        const stringValue = String(booleanValue);
+        console.log(stringValue.length);
+
+        
+    </script>
+    
+</body>
+</html>

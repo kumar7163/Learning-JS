@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements</title>
+</head>
+<body>
+
+    <script>
+        //Check if a given number is positive, negative, or zero.
+
+        const number = +(prompt("Enter a number"));
+        if(number>0)
+        {
+            console.log(`${number} is +ve`);
+        }
+        else if(number < 0)
+        {
+            console.log(`${number} is -ve`);
+        }
+        else{
+            console.log(`you have entered (zero) ${number}`);
+        }
+
+        // Check if a person is eligible to vote (age greater than or equal to 18).
+        const name = prompt("Enter your name");
+        const age = +(prompt("Enter a age"));
+        if (age>=18)
+        {
+            console.log(`Congratulations! ${name}, you are eligible to vote`);
+        }
+        else{
+            console.log(`${name}, you are not eligible to vote`);
+        }
+    </script>    
+</body>
+</html>

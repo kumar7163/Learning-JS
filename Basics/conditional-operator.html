@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch statements</title>
+</head>
+<body>
+    
+    <script>
+        // 1. Determine if a number is even or odd using the ternary operator.
+        const number = +(prompt("Enter an integer number"));
+        
+        alert(`The number you have enetered is ${(number%2==0)?"even":"odd"}. `);
+        
+
+
+        // 2. Check if a person is eligible for a discount based on their purchase amount using the ternary operator.
+        const name = prompt("Enter your name");
+        alert(`Hi, ${name} welcome to the shopping cart!`);
+        const budget = +(prompt("May I know your budget for today, to check the exciting deals for you?"));
+        alert(`${budget>=1000?"Hooray! you are eligible for discount":"You can think of extending your budget upto Rs1000/- to be eligible for discount"}`);
+
+    </script>
+</body>
+</html>
